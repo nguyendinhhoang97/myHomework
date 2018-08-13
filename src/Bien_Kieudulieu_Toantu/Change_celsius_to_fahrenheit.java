@@ -9,8 +9,8 @@ public class Change_celsius_to_fahrenheit {
         float C;
         float F;
         System.out.print("Nhập độ C:");
-        C = scanner.nextInt();
-        F = 9*C/5 + 32;
+        C = scanner.nextFloat();
+        F = (9*C/5) + 32;
         System.out.println("Đổi ra độ F =:"+F);
 
     }
