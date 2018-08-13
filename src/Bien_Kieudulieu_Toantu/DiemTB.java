@@ -2,8 +2,6 @@ package Bien_Kieudulieu_Toantu;
 
 import java.util.Locale;
 import java.util.Scanner;
-import java.io.FileNotFoundException;
-import java.io.File;
 
 public class DiemTB {
     public static void main(String[] args) {
