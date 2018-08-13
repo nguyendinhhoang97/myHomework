@@ -1,12 +1,14 @@
 package Bien_Kieudulieu_Toantu;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class RectangularArea {
     public static void main(String[] args) {
         float height;
         float width;
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner;
+        scanner = new Scanner(System.in).useLocale(Locale.US);
         System.out.print("enter height =:");
         height = scanner.nextFloat();
         System.out.print("enter width =:");
