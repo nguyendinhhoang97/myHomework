@@ -3,16 +3,32 @@ package Cau_lenh_dieu_kien;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class count_the_number_of_days_a_month {
+public class Count_the_number_of_days_a_month {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+        int year;
+        boolean isLeapYear = false;
+        System.out.print("Enter the year to be calculated:");
+        year = scanner.nextInt();
         int month;
         String daysInMonth;
         System.out.print("Input month which need check:");
         month = scanner.nextInt();
+        if(year % 4 == 0){
+            if(year % 100 == 0){
+                if(year % 400 == 0){
+                    isLeapYear = true;
+                }
+            } else {
+                isLeapYear = true;
+            }
+        }
         switch (month){
             case 2:
-                daysInMonth = "28 or 29";
+                if(isLeapYear){
+                    daysInMonth = "29";
+                }else
+                    daysInMonth = "28";
                 break;
             case 1:
             case 3:
@@ -34,7 +50,7 @@ public class count_the_number_of_days_a_month {
 
         }
         if (daysInMonth != "")
-            System.out.printf("The month %d has %s days!",month,daysInMonth);
+            System.out.printf("The month %d/%d has %s days!",month,year,daysInMonth);
         else
             System.out.println("Invalid input");
     }
