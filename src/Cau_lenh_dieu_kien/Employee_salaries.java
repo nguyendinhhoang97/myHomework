@@ -17,7 +17,7 @@ public class Employee_salaries {
             heSoLuong = sc.nextFloat();
         }else {
             float luongThang = heSoLuong * 4000000 + soNamLamViec * 500000;
-            System.out.println("Lương tháng của bạn là : " + luongThang);
+            System.out.printf("Lương tháng của bạn là :" + (long)luongThang);
         }
     }
 }
