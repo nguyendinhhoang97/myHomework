@@ -11,7 +11,7 @@ public class Count_the_number_of_days_a_month {
         System.out.print("Enter the year to be calculated:");
         year = scanner.nextInt();
         int month;
-        String daysInMonth;
+        int daysInMonth;
         System.out.print("Input month which need check:");
         month = scanner.nextInt();
         if(year % 4 == 0){
@@ -23,12 +23,17 @@ public class Count_the_number_of_days_a_month {
                 isLeapYear = true;
             }
         }
-        switch (month){
+        while ((month > 12) || (month < 1)) {
+            System.out.println("Invalid input,please again");
+            month = scanner.nextInt();
+        }
+
+            switch (month) {
             case 2:
-                if(isLeapYear){
-                    daysInMonth = "29";
-                }else
-                    daysInMonth = "28";
+                if (isLeapYear) {
+                    daysInMonth = 29;
+                } else
+                    daysInMonth = 28;
                 break;
             case 1:
             case 3:
@@ -37,21 +42,17 @@ public class Count_the_number_of_days_a_month {
             case 8:
             case 10:
             case 12:
-                daysInMonth = "31";
+                daysInMonth = 31;
                 break;
+            default:
             case 4:
             case 6:
             case 9:
             case 11:
-                daysInMonth = "30";
-                break;
-            default:
-                daysInMonth = "";
-
+                daysInMonth = 30;
         }
-        if (daysInMonth != "")
-            System.out.printf("The month %d/%d has %s days!",month,year,daysInMonth);
-        else
-            System.out.println("Invalid input");
+            System.out.printf("The month %d/%d has %d days!", month, year, daysInMonth);
+            }
+
     }
-}
+
