@@ -21,7 +21,5 @@ public class CaculateBMI {
             System.out.println("Overweight");
         else
             System.out.println("Obse");
-
         }
-
 }
