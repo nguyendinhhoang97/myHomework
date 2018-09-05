@@ -2,7 +2,7 @@ package Caulenhlap;
 
 import java.util.Scanner;
 
-public class TimSoNguyenTo {
+public class KTSoNguyenTo {
     public static void main(String[] args) {
         System.out.println("Chương trình tìm số nguyên tố");
         int x;
