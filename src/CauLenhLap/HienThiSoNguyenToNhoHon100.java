@@ -1,4 +1,4 @@
-package Caulenhlap;
+package CauLenhLap;
 
 public class HienThiSoNguyenToNhoHon100 {
     public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class HienThiSoNguyenToNhoHon100 {
         for (int number = 2; number <= 100; number++) {
             boolean check = true;
             int i = 2;
-            while (i<=Math.sqrt(number)){
+            while (i <= Math.sqrt(number)) {
                 if (number % i == 0) {
                     check = false;
                     break;
@@ -18,6 +18,5 @@ public class HienThiSoNguyenToNhoHon100 {
             else
                 continue;
         }
-
     }
 }

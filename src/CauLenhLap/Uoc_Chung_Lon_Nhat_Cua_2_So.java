@@ -1,4 +1,4 @@
-package Caulenhlap;
+package CauLenhLap;
 
 import java.util.Scanner;
 

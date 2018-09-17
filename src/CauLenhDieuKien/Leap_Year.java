@@ -1,4 +1,4 @@
-package Cau_lenh_dieu_kien;
+package CauLenhDieuKien;
 
 import java.util.Scanner;
 

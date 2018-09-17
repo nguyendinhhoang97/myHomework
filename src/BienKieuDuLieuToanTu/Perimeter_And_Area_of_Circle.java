@@ -1,4 +1,4 @@
-package Bien_Kieudulieu_Toantu;
+package BienKieuDuLieuToanTu;
 
 import java.util.Locale;
 import java.util.Scanner;

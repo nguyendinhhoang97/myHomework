@@ -1,4 +1,4 @@
-package Bien_Kieudulieu_Toantu;
+package BienKieuDuLieuToanTu;
 
 public class Khaibaovasudungbien {
     public static void main(String[] args) {

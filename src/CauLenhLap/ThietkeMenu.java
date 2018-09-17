@@ -1,4 +1,4 @@
-package Caulenhlap;
+package CauLenhLap;
 
 public class ThietkeMenu {
 

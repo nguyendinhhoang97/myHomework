@@ -1,4 +1,4 @@
-package Caulenhlap;
+package CauLenhLap;
 
 public class HienThi20SoNguyenToDauTien {
     public static void main(String[] args) {
