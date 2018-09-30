@@ -2,7 +2,7 @@ package CauLenhLap;
 
 import java.util.Scanner;
 
-public class Uoc_Chung_Lon_Nhat_Cua_2_So {
+public class UocChungLonNhatCua2So {
     public static void main(String[] args) {
         int a, b;
         Scanner scanner = new Scanner(System.in);
@@ -20,6 +20,6 @@ public class Uoc_Chung_Lon_Nhat_Cua_2_So {
                     b = b - a;
             }
         }
-        System.out.println("Greatest common factor:" + a);
+        System.out.println("Greatest common factor: " + a);
     }
 }
