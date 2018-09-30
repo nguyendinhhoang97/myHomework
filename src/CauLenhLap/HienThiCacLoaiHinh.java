@@ -16,15 +16,35 @@ public class HienThiCacLoaiHinh {
             System.out.print("Enter your choice:");
             choice = scanner.nextInt();
             switch (choice) {
-                case 1:
-                    for (int i = 0; i < 4; i++) {
-                        for (int j = 0; j <= 6; j++) {
+                case 3:
+                    for (int i = 1; i <= 4; i++) {
+                        for (int j = 1; j <= 4; j++) {
                             System.out.print("*  ");
                         }
                         System.out.println("*");
                     }
+                    break;
+                case 1:
+                    int number = 1;
+                    while (number <= 5) {
+                        for (int i = 1; i <= number; i++) {
+                            System.out.print("*  ");
+                        }
+                        System.out.println();
+                        number++;
+                    }
+                    break;
+                case 2:
+                    for (int i = 0; i < 5; i++) {
+                        for (int j = 0; j < 5; j++) {
+                            System.out.print("*  ");
+                        }
+                        System.out.println();
+                    }
+                    break;
+                default:
+                    System.out.println("Invalid input");
             }
         }
     }
 }
-
